@@ -5,9 +5,11 @@
 ![gii](https://github.com/ToSchQLB/yii2_module_schulung/raw/master/images/01_gii.jpg)
 - Module erstellen
 
-![Extentsion Generator](https://github.com/ToSchQLB/yii2_module_schulung/raw/master/images/02_ext_gen.jpg)
+![Extension Generator](https://github.com/ToSchQLB/yii2_module_schulung/raw/master/images/02_ext_gen.jpg)
 ![Module Generator](https://github.com/ToSchQLB/yii2_module_schulung/raw/master/images/03_mdl_gen.jpg)
 
+
+![Extension Generator](https://github.com/ToSchQLB/yii2_module_schulung/raw/master/images/04_ext_gen_result.jpg)
 #### 1. Schritt:
 ```
 composer create-project --prefer-dist yiisoft/yii2-app-basic module
