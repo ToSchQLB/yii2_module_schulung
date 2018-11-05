@@ -1,0 +1,21 @@
+{
+    "name": "toschqlb/yii2-mdl-bsp",
+    "description": "Dieses Beispiel dient zu Schulung",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toni Schreiber",
+            "email": "toni.schreiber.88@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "toschqlb\\beispiel\\": ""
+        }
+    }
+}
