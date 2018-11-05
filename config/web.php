@@ -53,6 +53,9 @@ $config = [
         */
     ],
     'params' => $params,
+    'modules' => [
+        'bsp' => 'toschqlb\beispiel\Module'
+    ]
 ];
 
 if (YII_ENV_DEV) {

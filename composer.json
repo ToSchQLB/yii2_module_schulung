@@ -64,5 +64,10 @@
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "toschqlb\\beispiel\\" :"modules/beispiel/yii2-mdl-bsp"
+        }
+    }
 }

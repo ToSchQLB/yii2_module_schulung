@@ -1,6 +1,6 @@
 {
     "name": "toschqlb/yii2-mdl-bsp",
-    "description": "Dieses Beispiel dient zu Schulung",
+    "description": "Dieses Beispiel dient zur Schulung",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
     "license": "MIT",

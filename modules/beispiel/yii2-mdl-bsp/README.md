@@ -1,6 +1,6 @@
 Beispiel Module
 ===============
-Dieses Beispiel dient zu Schulung
+Dieses Beispiel dient zur Schulung
 
 Installation
 ------------
