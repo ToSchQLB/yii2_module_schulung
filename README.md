@@ -13,10 +13,11 @@
     )
 ``` 
 - Gii Model-Generator öffnen
+
 ![Model Generator](https://github.com/ToSchQLB/yii2_module_schulung/raw/master/images/05_mdl_gen.jpg)
 - Gii CRUD-Generator öffnen
 
-![Model Generator](https://github.com/ToSchQLB/yii2_module_schulung/raw/master/images/06_crud_gen.jpg)
+![CRUD Generator](https://github.com/ToSchQLB/yii2_module_schulung/raw/master/images/06_crud_gen.jpg)
 
 ### 1. Schritt:
 ```
