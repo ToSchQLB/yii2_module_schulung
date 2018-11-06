@@ -1,22 +1,21 @@
 <h1 align="center">Workshop: Yii 2 - Module</h1>
 
 ### aktueller Schritt:
-- Ordnerstruktur anlegen
-    - models
-    - views
-    - (controlers)
-    - migrations
-    
-- migration anlegen
-```cmd
-yii migrate/create  --migrationPath=@app/modules/beispiel/yii2-mdl-bsp/migrations create_user_table --fields="name:string,passwort:string,mail:string"
-```
-- migration ausführen
-```cmd
-yii migrate/up  --migrationPath=@app/modules/beispiel/yii2-mdl-bsp/migrations
-```
-Weiter lesen: [Namespaced Migrations](https://www.yiiframework.com/doc/guide/2.0/en/db-migrations#namespaced-migrations)
-
+- Update extensions.php
+```php
+'toschqlb/yii2-mdl-bsp' =>
+    array(
+        'name' => 'toschqlb/yii2-mdl-bsp',
+        'version' => '0',
+        'alias'=>array(
+            '@toschqlb/beispiel' => $vendorDir . '/../modules/beispiel/yii2-mdl-bsp',
+        )
+    )
+``` 
+- Gii Model-Generator öffnen
+![Model Generator](https://github.com/ToSchQLB/yii2_module_schulung/raw/master/images/05_mdl_gen.jpg)
+- Gii CRUD-Generator öffnen
+![Model Generator](https://github.com/ToSchQLB/yii2_module_schulung/raw/master/images/06_crud_gen.jpg)
 
 ### 1. Schritt:
 ```
@@ -54,3 +53,19 @@ composer create-project --prefer-dist yiisoft/yii2-app-basic module
     composer dumpautoload
 ```
 - Default Route und ersten Controller definieren
+### 3. Schritt
+- Ordnerstruktur anlegen
+    - models
+    - views
+    - (controlers)
+    - migrations
+    
+- migration anlegen
+```cmd
+yii migrate/create  --migrationPath=@app/modules/beispiel/yii2-mdl-bsp/migrations create_user_table --fields="name:string,passwort:string,mail:string"
+```
+- migration ausführen
+```cmd
+yii migrate/up  --migrationPath=@app/modules/beispiel/yii2-mdl-bsp/migrations
+```
+Weiter lesen: [Namespaced Migrations](https://www.yiiframework.com/doc/guide/2.0/en/db-migrations#namespaced-migrations)
