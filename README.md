@@ -1,6 +1,28 @@
 <h1 align="center">Workshop: Yii 2 - Module</h1>
 
 ### aktueller Schritt:
+- Ordnerstruktur anlegen
+    - models
+    - views
+    - (controlers)
+    - migrations
+    
+- migration anlegen
+```cmd
+yii migrate/create  --migrationPath=@app/modules/beispiel/yii2-mdl-bsp/migrations create_user_table --fields="name:string,passwort:string,mail:string"
+```
+- migration ausführen
+```cmd
+yii migrate/up  --migrationPath=@app/modules/beispiel/yii2-mdl-bsp/migrations
+```
+Weiter lesen: [Namespaced Migrations](https://www.yiiframework.com/doc/guide/2.0/en/db-migrations#namespaced-migrations)
+
+
+### 1. Schritt:
+```
+composer create-project --prefer-dist yiisoft/yii2-app-basic module
+```
+### 2. Schritt:
 - Gii Module Generator oder Extension Generator öffnen
 ![gii](https://github.com/ToSchQLB/yii2_module_schulung/raw/master/images/01_gii.jpg)
 - Module erstellen
@@ -32,7 +54,3 @@
     composer dumpautoload
 ```
 - Default Route und ersten Controller definieren
-### 1. Schritt:
-```
-composer create-project --prefer-dist yiisoft/yii2-app-basic module
-```
